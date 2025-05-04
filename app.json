@@ -1,41 +1,40 @@
 {
-  "expo": {
-    "name": "Adansell",
-    "slug": "adansell",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./app/assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./app/assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./app/assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.iahmrza.adansell"
-    },
-    "web": {
-      "favicon": "./app/assets/favicon.png",
-      "output": "static"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "8650f315-98d5-4a2a-9bc2-ff7eafdb70e5"
-      }
-    }
-  }
+	"expo": {
+		"name": "Adansell",
+		"slug": "adansell",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./app/assets/icon.png",
+		"owner": "iahmrza",
+		"userInterfaceStyle": "light",
+		"newArchEnabled": true,
+		"splash": {
+			"image": "./app/assets/splash-icon.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./app/assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"package": "com.iahmrza.adansell"
+		},
+		"web": {
+			"favicon": "./app/assets/favicon.png",
+			"output": "static"
+		},
+		"plugins": ["expo-router"],
+		"extra": {
+			"router": {
+				"origin": false
+			},
+			"eas": {
+				"projectId": "8650f315-98d5-4a2a-9bc2-ff7eafdb70e5"
+			}
+		}
+	}
 }
