@@ -21,8 +21,7 @@ function CategoryPickerItem({ item, onPress }: Props) {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		paddingVertical: 16,
-		paddingHorizontal: 32,
+		padding: 16,
 		alignItems: 'center',
 		gap: 8,
 		width: '33%',

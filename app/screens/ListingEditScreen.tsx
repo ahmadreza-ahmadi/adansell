@@ -84,7 +84,7 @@ function ListingEdit() {
 				<View style={styles.inputsContainer}>
 					<AppFormField<Yup.InferType<typeof validationSchema>>
 						name='title'
-						placeholder='Email'
+						placeholder='Title'
 						autoCapitalize='words'
 						maxLength={255}
 					/>
