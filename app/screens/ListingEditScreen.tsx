@@ -3,6 +3,8 @@ import * as Yup from 'yup';
 
 import Screen from '../components/Screen';
 import { AppForm, AppFormField, SubmitButton, AppFormPicker } from '../components/forms';
+import { Option, OptionWithIcon } from '../components/AppPicker';
+import CategoryPickerItem from '../components/CategoryPickerItem';
 
 const validationSchema = Yup.object().shape({
 	title: Yup.string().required().min(1).label('Title'),
@@ -11,10 +13,63 @@ const validationSchema = Yup.object().shape({
 	category: Yup.object().required().nullable().label('Category'),
 });
 
-const CATEGORIES = [
-	{ label: 'Furniture', value: 1 },
-	{ label: 'Clothing', value: 2 },
-	{ label: 'Camera', value: 3 },
+const CATEGORIES: OptionWithIcon[] = [
+	{
+		value: 1,
+		label: 'Furniture',
+		icon: {
+			name: 'floor-lamp',
+			color: '#fc5c65',
+		},
+	},
+	{
+		value: 2,
+		label: 'Cars',
+		icon: {
+			name: 'car',
+			color: '#fd9644',
+		},
+	},
+	{
+		value: 3,
+		label: 'Cameras',
+		icon: {
+			name: 'camera',
+			color: '#fed330',
+		},
+	},
+	{
+		value: 4,
+		label: 'Games',
+		icon: {
+			name: 'cards',
+			color: '#26de81',
+		},
+	},
+	{
+		value: 5,
+		label: 'Clothing',
+		icon: {
+			name: 'shoe-heel',
+			color: '#2bcbba',
+		},
+	},
+	{
+		value: 6,
+		label: 'Sports',
+		icon: {
+			name: 'basketball',
+			color: '#45aaf2',
+		},
+	},
+	{
+		value: 7,
+		label: 'Movies & Music',
+		icon: {
+			name: 'headphones',
+			color: '#4b7bec',
+		},
+	},
 ];
 
 function ListingEdit() {
@@ -38,11 +93,14 @@ function ListingEdit() {
 						placeholder='Price'
 						keyboardType='numeric'
 						maxLength={8}
+						style={{ width: 128 }}
 					/>
 					<AppFormPicker<Yup.InferType<typeof validationSchema>>
 						name='category'
 						options={CATEGORIES}
 						placeholder='Category'
+						style={{ width: 200 }}
+						variant='category'
 					/>
 					<AppFormField<Yup.InferType<typeof validationSchema>>
 						name='description'
@@ -62,8 +120,6 @@ function ListingEdit() {
 const styles = StyleSheet.create({
 	screen: {
 		justifyContent: 'center',
-		flex: 1,
-		padding: 16,
 	},
 	logo: {
 		width: 80,

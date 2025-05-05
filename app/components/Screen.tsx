@@ -13,8 +13,8 @@ function Screen({ style, children }: Props) {
 
 const styles = StyleSheet.create({
 	screen: {
-		padding: 16,
 		flex: 1,
+		padding: 16,
 	},
 });
 

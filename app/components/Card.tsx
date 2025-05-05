@@ -14,7 +14,9 @@ function Card({ title, subTitle, image, style }: Props) {
 		<View style={[styles.card, style]}>
 			<Image source={image} style={styles.image} />
 			<View style={styles.detailsContainer}>
-				<AppText style={styles.title}>{title}</AppText>
+				<AppText style={styles.title} numberOfLines={2}>
+					{title}
+				</AppText>
 				<AppText style={styles.subtitle}>{subTitle}</AppText>
 			</View>
 		</View>

@@ -4,14 +4,14 @@ import AppText from './AppText';
 import { Option } from './AppPicker';
 
 type Props = {
-	label: Option['label'];
+	item: Option;
 	onPress: TouchableWithoutFeedbackProps['onPress'];
 };
 
-function PickerItem({ label, onPress }: Props) {
+function PickerItem({ item, onPress }: Props) {
 	return (
 		<TouchableOpacity onPress={onPress}>
-			<AppText style={styles.text}>{label}</AppText>
+			<AppText style={styles.text}>{item.label}</AppText>
 		</TouchableOpacity>
 	);
 }

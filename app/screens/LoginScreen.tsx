@@ -47,8 +47,6 @@ function LoginScreen() {
 const styles = StyleSheet.create({
 	screen: {
 		justifyContent: 'center',
-		flex: 1,
-		padding: 16,
 	},
 	logo: {
 		width: 80,

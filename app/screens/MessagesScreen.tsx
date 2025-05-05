@@ -41,6 +41,7 @@ function MessagesScreen() {
 						variant='image'
 						image={item.image}
 						key={item.id}
+						showChevrons
 						renderRightActions={() => (
 							<ListItemDeleteAction onPress={() => handleDelete(item.id)} />
 						)}

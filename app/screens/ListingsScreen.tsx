@@ -47,10 +47,7 @@ function ListingsScreen() {
 
 const styles = StyleSheet.create({
 	screen: {
-		flex: 1,
 		backgroundColor: colors.light,
-		padding: 20,
-		paddingTop: 40,
 	},
 });
 
